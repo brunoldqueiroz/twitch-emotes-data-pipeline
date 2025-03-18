@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "twitch-emotes-data-pipeline"
+version = "0.1.0"
+description = ""
+authors = ["Bruno Queiroz <brunoldqueiroz@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+requests = "^2.32.3"
+duckdb = "^1.2.1"
+loguru = "^0.7.3"
+pymongo = "^4.11.2"
+websockets = "^15.0.1"
+asyncio = "^3.4.3"
+aiobotocore = "^2.21.1"
+aiofiles = "^24.1.0"
+kafka-python = "^2.1.1"
+aiokafka = "^0.12.0"
+pytz = "^2025.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+flake8 = "^7.1.2"
+black = "^25.1.0"
+isort = "^6.0.1"
+pyarrow-stubs = "^17.19"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
